@@ -1,0 +1,6 @@
+C:\Users\Alexe\source\repos\3 practice\3 practice\bin\Debug\3 practice.exe.config
+C:\Users\Alexe\source\repos\3 practice\3 practice\bin\Debug\3 practice.exe
+C:\Users\Alexe\source\repos\3 practice\3 practice\bin\Debug\3 practice.pdb
+C:\Users\Alexe\source\repos\3 practice\3 practice\obj\Debug\3 practice.csproj.CoreCompileInputs.cache
+C:\Users\Alexe\source\repos\3 practice\3 practice\obj\Debug\3 practice.exe
+C:\Users\Alexe\source\repos\3 practice\3 practice\obj\Debug\3 practice.pdb

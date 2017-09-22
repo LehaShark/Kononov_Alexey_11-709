@@ -1,0 +1,7 @@
+C:\Users\Alexe\source\repos\2 practice\2 practice\obj\Debug\2 practice.csprojResolveAssemblyReference.cache
+C:\Users\Alexe\source\repos\2 practice\2 practice\obj\Debug\2 practice.csproj.CoreCompileInputs.cache
+C:\Users\Alexe\source\repos\2 practice\2 practice\obj\Debug\ConsoleApp2.exe
+C:\Users\Alexe\source\repos\2 practice\2 practice\obj\Debug\ConsoleApp2.pdb
+C:\Users\Alexe\source\repos\2 practice\2 practice\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Alexe\source\repos\2 practice\2 practice\bin\Debug\ConsoleApp2.exe
+C:\Users\Alexe\source\repos\2 practice\2 practice\bin\Debug\ConsoleApp2.pdb
