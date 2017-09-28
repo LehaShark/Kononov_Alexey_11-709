@@ -1,0 +1,6 @@
+C:\Users\Alexe\source\repos\5 week 2 practice\5 week 2 practice\obj\Debug\5 week 2 practice.csproj.CoreCompileInputs.cache
+C:\Users\Alexe\source\repos\5 week 2 practice\5 week 2 practice\bin\Debug\5 week 2 practice.exe.config
+C:\Users\Alexe\source\repos\5 week 2 practice\5 week 2 practice\bin\Debug\5 week 2 practice.exe
+C:\Users\Alexe\source\repos\5 week 2 practice\5 week 2 practice\bin\Debug\5 week 2 practice.pdb
+C:\Users\Alexe\source\repos\5 week 2 practice\5 week 2 practice\obj\Debug\5 week 2 practice.exe
+C:\Users\Alexe\source\repos\5 week 2 practice\5 week 2 practice\obj\Debug\5 week 2 practice.pdb
