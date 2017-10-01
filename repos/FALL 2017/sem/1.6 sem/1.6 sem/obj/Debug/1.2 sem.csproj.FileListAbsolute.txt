@@ -1,0 +1,6 @@
+C:\Users\Alexe\source\repos\1.2 sem\1.2 sem\bin\Debug\1.2 sem.exe.config
+C:\Users\Alexe\source\repos\1.2 sem\1.2 sem\bin\Debug\1.2 sem.exe
+C:\Users\Alexe\source\repos\1.2 sem\1.2 sem\bin\Debug\1.2 sem.pdb
+C:\Users\Alexe\source\repos\1.2 sem\1.2 sem\obj\Debug\1.2 sem.csproj.CoreCompileInputs.cache
+C:\Users\Alexe\source\repos\1.2 sem\1.2 sem\obj\Debug\1.2 sem.exe
+C:\Users\Alexe\source\repos\1.2 sem\1.2 sem\obj\Debug\1.2 sem.pdb
