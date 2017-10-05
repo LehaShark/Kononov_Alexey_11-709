@@ -1,7 +1,0 @@
-C:\Users\Alexe\source\repos\6 practice\6 practice\obj\Debug\6 practice.csproj.CoreCompileInputs.cache
-C:\Users\Alexe\source\repos\6 practice\6 practice\bin\Debug\6 practice.exe.config
-C:\Users\Alexe\source\repos\6 practice\6 practice\bin\Debug\6 practice.exe
-C:\Users\Alexe\source\repos\6 practice\6 practice\bin\Debug\6 practice.pdb
-C:\Users\Alexe\source\repos\6 practice\6 practice\obj\Debug\6 practice.csprojResolveAssemblyReference.cache
-C:\Users\Alexe\source\repos\6 practice\6 practice\obj\Debug\6 practice.exe
-C:\Users\Alexe\source\repos\6 practice\6 practice\obj\Debug\6 practice.pdb

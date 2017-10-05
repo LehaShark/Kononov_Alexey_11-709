@@ -8,19 +8,43 @@ namespace _3._1_sem
 {
     class Program
     {
-        static void Main(string[] args)
+        public static int GCD(int a, int b)
         {
-            int i;
-            int amountOfNumber = int.Parse(Console.ReadLine());
-            while(amountOfNumber != 0)
+            int gCD = 0;
+            if (a > b)
             {
-                int number = int.Parse(Console.ReadLine());
-                for (i = 1; i < number; i++)
+                for (int i = 1; i < b; i++)
                 {
-                    if (number % i == 0)
-
+                    if ((a % i == 0) && (b % i == 0))
+                    {
+                        gCD = i;
+                    }
                 }
             }
+            else
+            {
+                for (int i = 1; i < a; i++)
+                {
+                    if ((a % i == 0) && (b % i == 0))
+                    {
+                        gCD = i;
+                    }
+                }
+            }
+            return gCD;
+        }
+        static void Main(string[] args)
+        {
+            int lCM = 1;
+            int amount = int.Parse(Console.ReadLine());
+            while (amount != 0)
+            {
+                int number1 = int.Parse(Console.ReadLine());
+                int number2 = int.Parse(Console.ReadLine());
+                lCM *= (number1 * number2) / (GCD(number1, number2));
+                amount -= 1;
+            }
+            Console.WriteLine(lCM);
         }
     }
 }
