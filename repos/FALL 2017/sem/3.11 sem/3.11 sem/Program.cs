@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3._11_sem
 {
+    //Считывая числа пока не встретится 0, найти минимальное и максимальное число
     class Program
     {
         static void Main(string[] args)

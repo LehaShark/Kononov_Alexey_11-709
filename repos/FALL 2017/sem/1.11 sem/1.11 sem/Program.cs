@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1._11_sem
 {
+    //По вещественным координатам треугольника (шесть чисел) найти площадь этого треугольника
     class Program
     {
         static void Main(string[] args)

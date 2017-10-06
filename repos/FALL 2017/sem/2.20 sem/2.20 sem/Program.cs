@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2._20_sem
 {
+    //По заданному числу k, вывести символ 0 столько раз, сколько он встречается в двоичном
+    //представлении числа
     class Program
     {
         static void Main(string[] args)

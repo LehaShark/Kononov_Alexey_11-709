@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 2._10_sem
+namespace _2._10_sem
 {
+    //Вывести биты натурального числа n в обратном порядке (n<=10^9)
     class Program
     {
         static void Main(string[] args)

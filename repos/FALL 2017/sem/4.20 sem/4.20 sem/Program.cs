@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _4._20_sem
 {
+    //Найти значение произведения a*b*c таких чисел, что a^2+b^2=c^2 и a+b+c=1000
     class Program
     {
         static void Main(string[] args)

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace _4._10_sem
 {
+    //Найти длину и значение суммы элементов последовательности простых чисел, в сумме дающих
+    //простое число, меньшее 1000
     class Program
     {
         public static bool PrimeNumber (int number1)

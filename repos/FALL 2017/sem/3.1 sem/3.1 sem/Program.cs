@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3._1_sem
 {
+    //Вычислить НОК нескольких натуральных чисел <10^9. Количество чисел <10000
     class Program
     {
         public static int GCD(int a, int b)
