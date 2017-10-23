@@ -17,7 +17,7 @@ namespace _1._11_sem
             double y2 = double.Parse(Console.ReadLine());
             double x3 = double.Parse(Console.ReadLine());
             double y3 = double.Parse(Console.ReadLine());
-            Console.WriteLine((1.0 / 2.0) * ((x1 - x3)*(y2 - y3) - (x2 - x3)*(y1 - y3)));
+            Console.WriteLine(0.5 * ((x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)));
         }
     }
 }
