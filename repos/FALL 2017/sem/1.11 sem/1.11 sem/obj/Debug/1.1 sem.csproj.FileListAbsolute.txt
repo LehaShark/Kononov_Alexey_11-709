@@ -1,7 +1,0 @@
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\bin\Debug\1.1 sem.exe.config
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\bin\Debug\1.1 sem.exe
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\bin\Debug\1.1 sem.pdb
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\obj\Debug\1.1 sem.csprojResolveAssemblyReference.cache
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\obj\Debug\1.1 sem.csproj.CoreCompileInputs.cache
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\obj\Debug\1.1 sem.exe
-C:\Users\Alexe\source\repos\1.1 sem\1.1 sem\obj\Debug\1.1 sem.pdb

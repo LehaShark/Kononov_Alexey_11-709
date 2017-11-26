@@ -1,6 +1,0 @@
-C:\Users\Alexe\Kononov_Alexey_11-709\repos\FALL 2017\sem\1.4 sem\1.4 sem\bin\Debug\1.4 sem.exe.config
-C:\Users\Alexe\Kononov_Alexey_11-709\repos\FALL 2017\sem\1.4 sem\1.4 sem\bin\Debug\1.4 sem.exe
-C:\Users\Alexe\Kononov_Alexey_11-709\repos\FALL 2017\sem\1.4 sem\1.4 sem\bin\Debug\1.4 sem.pdb
-C:\Users\Alexe\Kononov_Alexey_11-709\repos\FALL 2017\sem\1.4 sem\1.4 sem\obj\Debug\1.4 sem.csproj.CoreCompileInputs.cache
-C:\Users\Alexe\Kononov_Alexey_11-709\repos\FALL 2017\sem\1.4 sem\1.4 sem\obj\Debug\1.4 sem.exe
-C:\Users\Alexe\Kononov_Alexey_11-709\repos\FALL 2017\sem\1.4 sem\1.4 sem\obj\Debug\1.4 sem.pdb
