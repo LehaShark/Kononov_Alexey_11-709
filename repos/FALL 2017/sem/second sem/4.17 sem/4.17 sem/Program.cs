@@ -43,19 +43,6 @@ namespace _4._17_sem
                 array[array.Length - 1]++;
             return array;
         }
-        static bool ComparisonAMoreThenB(int[] a, int[] b)
-        {
-                bool comparison = true;
-                for (int i = 0; i < a.Length; i++)
-                {
-                    if (a[i] > b[i])
-                    {
-                        comparison = false;
-                        break;
-                    }
-                }
-                return comparison;
-        }
         public static bool CompareFirstMoreThenSecond(int[] firstArray, int[] secondArray)
         {
             if (firstArray.Length == secondArray.Length)
@@ -69,6 +56,7 @@ namespace _4._17_sem
                     else
                         continue;
                 }
+                return true;
             }
             return firstArray.Length > secondArray.Length;
         }
@@ -120,11 +108,10 @@ namespace _4._17_sem
                     quotient[i] = minuend[i] - subtrahend[i];
                 }
             }
-            return ArrayFragmentation(quotient);
+            return quotient;
         }
-        public static int[] RemainderOfDivide(int[] dividend, int[] divider)
+        public static int[] RemainderOfDivide(int[] remainder, int[] divider)
         {
-            int[] remainder = dividend;
             while (CompareFirstMoreThenSecond(remainder, divider))
             { 
                     remainder = Subtraction(remainder, divider);
@@ -133,40 +120,12 @@ namespace _4._17_sem
         }
         static void Main(string[] args)
         {
-            var jopa = DeterminationOfTheNumber(Console.ReadLine());
-            var jopa1 = DeterminationOfTheNumber(Console.ReadLine());
-            foreach (int e in NumberOfDividers(jopa))
+            var bigNumber = DeterminationOfTheNumber(Console.ReadLine());
+            var countOfDivide = NumberOfDividers(bigNumber);
+            foreach(int e in countOfDivide)
             {
                 Console.Write(e);
             }
-            Console.WriteLine(" ");
-            /*
-
-
-
-            var counter = new int[jopa.Length];
-            var divider = new int[jopa.Length];
-            while (CompareFirstMoreThenSecond(jopa, divider))
-            {
-                divider = AdditionOne(divider);
-                foreach (int e in divider)
-                    Console.WriteLine(e);
-                var quotient = Divide(jopa, divider);
-                foreach(int e in quotient)
-                    Console.WriteLine(e);
-                Console.WriteLine(" ");
-                if (quotient[0] == 0)
-                    counter = AdditionOne(counter);
-                quotient[0] = 0;
-                quotient = ArrayFragmentation(quotient);
-                foreach (int e in quotient)
-                {
-                    Console.Write(e);
-                }
-                Console.WriteLine(" ");
-                
-            }
-        */
         }
     }
 }
