@@ -110,11 +110,14 @@ namespace _4._17_sem
             }
             return quotient;
         }
-        public static int[] RemainderOfDivide(int[] remainder, int[] divider)
+        public static int[] RemainderOfDivide(int[] dividend, int[] divider)
         {
+            var remainder = new int[dividend.Length];
+            for (int i = 0; i < remainder.Length; i++)
+                remainder[i] = dividend[i];
             while (CompareFirstMoreThenSecond(remainder, divider))
-            { 
-                    remainder = Subtraction(remainder, divider);
+            {
+                remainder = Subtraction(remainder, divider);
             }
             return remainder;
         }
@@ -122,10 +125,8 @@ namespace _4._17_sem
         {
             var bigNumber = DeterminationOfTheNumber(Console.ReadLine());
             var countOfDivide = NumberOfDividers(bigNumber);
-            foreach(int e in countOfDivide)
-            {
+            foreach (int e in countOfDivide)
                 Console.Write(e);
-            }
         }
     }
 }
