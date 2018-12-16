@@ -1,0 +1,14 @@
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\newbot.exe.config
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\newbot.exe
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\newbot.pdb
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\Telegram.Bot.dll
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\Telegram.Bot.xml
+C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.csprojAssemblyReference.cache
+C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.csproj.CoreCompileInputs.cache
+C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.csproj.CopyComplete
+C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.exe
+C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.pdb
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\Org.Mentalis.dll
+C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\SocksWebProxy.dll
