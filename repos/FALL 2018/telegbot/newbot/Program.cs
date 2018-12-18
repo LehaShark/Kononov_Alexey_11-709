@@ -25,23 +25,26 @@ namespace Awesome
 
         static void Main()
         {
-            //botClient = new TelegramBotClient(
-            //    "753674851:AAEJF2_jpSE8-t0Y8dgYyl_uHb_YnZuaprQ",
-            //    new SocksWebProxy(
-            //            new ProxyConfig(
-            //                IPAddress.Parse("127.0.0.1"),
-            //                GetNextFreePort(),
-            //                IPAddress.Parse("103.10.154.242"),
-            //                41501,
-            //                ProxyConfig.SocksVersion.Five
-            //                //"userid66n9",
-            //                //"pSnEA7M"),
-            //                )
-            //            //false
-            //            )
-            //            );
+            botClient = new TelegramBotClient(
+                "753674851:AAEJF2_jpSE8-t0Y8dgYyl_uHb_YnZuaprQ"
+                //);
+                ,
+                new SocksWebProxy(
+                        new ProxyConfig(
+                            IPAddress.Parse("127.0.0.1"),
+                            GetNextFreePort(),
+                            IPAddress.Parse("103.194.250.110"),
+                            9999,
+                            ProxyConfig.SocksVersion.Five
+                        //,
+                        //"userid66n9",
+                        //"pSnEA7M"),
+                        //false
+                        )
+                        )
+                        );
 
-            //var me = botClient.GetMeAsync().Result;
+            var me = botClient.GetMeAsync().Result;
             Console.WriteLine(
               $"Hello, World! I am user {me.Id} and my name is {me.FirstName}."
             );

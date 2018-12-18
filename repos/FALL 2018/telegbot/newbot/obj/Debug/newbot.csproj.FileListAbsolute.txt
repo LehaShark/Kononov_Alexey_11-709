@@ -12,3 +12,17 @@ C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.exe
 C:\Users\Alexe\source\repos\newbot\newbot\obj\Debug\newbot.pdb
 C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\Org.Mentalis.dll
 C:\Users\Alexe\source\repos\newbot\newbot\bin\Debug\SocksWebProxy.dll
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\obj\Debug\newbot.csprojAssemblyReference.cache
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\obj\Debug\newbot.csproj.CoreCompileInputs.cache
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\obj\Debug\newbot.exe
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\obj\Debug\newbot.pdb
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\newbot.exe.config
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\newbot.exe
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\newbot.pdb
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\Org.Mentalis.dll
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\SocksWebProxy.dll
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\Telegram.Bot.dll
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\bin\Debug\Telegram.Bot.xml
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2018\telegbot\newbot\obj\Debug\newbot.csproj.CopyComplete
