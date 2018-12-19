@@ -6,6 +6,10 @@ using System.Net.Sockets;
 using System.Threading;
 using Telegram.Bot;
 using Telegram.Bot.Args;
+using Telegram.Bot.Types.ReplyMarkups;
+using System.Collections.Generic;
+using Telegram.Bot.Types;
+using Npgsql;
 
 namespace Awesome
 {
@@ -36,12 +40,12 @@ namespace Awesome
                             IPAddress.Parse("103.194.250.110"),
                             9999,
                             ProxyConfig.SocksVersion.Five
-                        //,
-                        //"userid66n9",
-                        //"pSnEA7M"),
-                        //false
+                        ,
+                        "userid66n9",
+                        "pSnEA7M"),
+                        false
                         )
-                        )
+                        //)
                         );
 
             var me = botClient.GetMeAsync().Result;
@@ -58,12 +62,40 @@ namespace Awesome
         {
             if (e.Message.Text != null)
             {
-                Console.WriteLine($"Received a text message in chat {e.Message.Chat.Id}.");
-
+                var rkm = new ReplyKeyboardMarkup
+                {
+                    Keyboard = new KeyboardButton[][]
+                    {
+                        new KeyboardButton[]
+                        {
+                            new KeyboardButton("/start"),
+                        }
+                    }
+                };
                 await botClient.SendTextMessageAsync(
-                  chatId: e.Message.Chat,
-                  text: "You said:\n" + e.Message.Text
-                );
+                    chatId: e.Message.Chat,
+                    text: "Если хотите начать напишите /start",
+                    replyMarkup: rkm);
+                return;
+            }
+
+            if (e.Message.Text == "/start")
+            {
+                var rkm = new ReplyKeyboardMarkup
+                {
+                    Keyboard = new KeyboardButton[][]
+                    {
+                        new KeyboardButton[]
+                        {
+                            new KeyboardButton("Поиграем"),
+                        }
+                    }
+                };
+                await botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: "Что будем делать?",
+                    replyMarkup: rkm);
+                return;
             }
         }
     }
