@@ -60,7 +60,8 @@ namespace Awesome
 
         static async void Bot_OnMessage(object sender, MessageEventArgs e)
         {
-            if (e.Message.Text != null)
+            int count = 0;
+            if (count == 0)
             {
                 var rkm = new ReplyKeyboardMarkup
                 {
@@ -76,10 +77,11 @@ namespace Awesome
                     chatId: e.Message.Chat,
                     text: "Если хотите начать напишите /start",
                     replyMarkup: rkm);
+                count++;
                 return;
             }
 
-            if (e.Message.Text == "/start")
+            else if (e.Message.Text == "/start" && count == 1)
             {
                 var rkm = new ReplyKeyboardMarkup
                 {
@@ -91,6 +93,7 @@ namespace Awesome
                         }
                     }
                 };
+
                 await botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
                     text: "Что будем делать?",
