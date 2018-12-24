@@ -15,8 +15,7 @@ namespace newbot
             var messege = e.Message.Text;
             var infoOfStudent = messege.Split(' ');
 
-
-            var connString = "Host=localhost;Port=5432;Username=postgres;Password=qwerty;Database=Student";
+            var connString = "Host=localhost;Port=5432;Username=postgres;Password=Z1478963z;Database=Student";
 
             using (var conn = new NpgsqlConnection(connString))
             {
