@@ -1,35 +1,55 @@
-﻿using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using Telegram.Bot.Args;
+﻿//using Npgsql;
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using Telegram.Bot.Args;
+//using NewBot;
 
-namespace newbot
-{
-    class DataBase
-    {
-        private static void WriteInBd(MessageEventArgs e)
-        {
-            var messege = e.Message.Text;
-            var infoOfStudent = messege.Split(' ');
+//namespace NewBot
+//{
+//    class DataBase<T> : IDataService<T> where T : User, new()
+//    {
+//        const string connString = "Host=localhost;Port=5432;Username=postgres;Password=Z1478963z;Database=TelegramBot";
+//        private string ConnectionString { get; set;
+//        }
 
-            var connString = "Host=localhost;Port=5432;Username=postgres;Password=Z1478963z;Database=Student";
+//        IEnumerable<T> IDataService<T>.GetAll()
+//        {
+//            throw new NotImplementedException();
+//        }
 
-            using (var conn = new NpgsqlConnection(connString))
-            {
-                conn.Open();
-                using (var cmd = new NpgsqlCommand())
-                {
-                    cmd.Connection = conn;
-                    cmd.CommandText = "INSERT INTO Student (name, last_name, sender_id) VALUES (@name, @last_name, @sender_id)";
-                    cmd.Parameters.AddWithValue("name", infoOfStudent[0]);
-                    cmd.Parameters.AddWithValue("last_name", infoOfStudent[1]);
-                    cmd.Parameters.AddWithValue("sender_id", e.Message.From.Id);
-                    cmd.ExecuteNonQuery();
-                }
-            }
-        }
-    }
-}
+//        private void Save(T user)
+//        {
+//            using (var conn = new NpgsqlConnection(connString))
+//            {
+//                conn.Open();
+//                using (var cmd = new NpgsqlCommand())
+//                {
+//                    cmd.Connection = conn;
+//                    cmd.CommandText = "INSERT INTO user (step, answer) VALUES (@step, @answer)";
+//                    cmd.Parameters.AddWithValue("step", user.step);
+//                    cmd.Parameters.AddWithValue("answer", user.answer);
+//                    cmd.ExecuteNonQuery();
+//                }
+//            }
+//        }
+
+//        void IDataService<T>.Save(T user)
+//        {
+//            using (var conn = new NpgsqlConnection(connString))
+//            {
+//                conn.Open();
+//                using (var cmd = new NpgsqlCommand())
+//                {
+//                    cmd.Connection = conn;
+//                    cmd.CommandText = "INSERT INTO user (step, answer) VALUES (@step, @answer)";
+//                    cmd.Parameters.AddWithValue("step", user.step);
+//                    cmd.Parameters.AddWithValue("answer", user.answer);
+//                    cmd.ExecuteNonQuery();
+//                }
+//            }
+//        }
+//    }
+//}

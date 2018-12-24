@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using NewBot;
 
 namespace NewBot
 {
-    public interface IDataService<T>
+    public class User
     {
-        void Save(T user);
-        IEnumerable<T> GetAll();
+        public string[] answer { get; set; }
+        public int step { get; set; }
     }
 }
