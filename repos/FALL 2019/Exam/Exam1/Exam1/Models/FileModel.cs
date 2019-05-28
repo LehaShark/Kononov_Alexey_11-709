@@ -10,5 +10,7 @@ namespace Exam1.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Path { get; set; }
+        public string Short { get; set; }
+        public string Full { get; set; }
     }
 }
