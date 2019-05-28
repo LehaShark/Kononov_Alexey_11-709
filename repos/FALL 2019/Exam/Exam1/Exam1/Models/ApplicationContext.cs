@@ -8,6 +8,8 @@ namespace Exam1.Models
 {
     public class ApplicationContext : DbContext
     {
+        public DbSet<Person> People { get; set; }
+
         public DbSet<FileModel> Files { get; set; }
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)

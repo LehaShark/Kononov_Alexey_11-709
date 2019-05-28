@@ -19,14 +19,40 @@ namespace FileUploadApp.Controllers
             _appEnvironment = appEnvironment;
         }
 
+        public IActionResult Create()
+        {
+            return View(_context.People.ToList());
+        }
+
+        [HttpPost]
+        public IActionResult Create(PersonViewModel pvm)
+        {
+            Person person = new Person { Name = pvm.Name };
+            if (pvm.Avatar != null)
+            {
+                byte[] imageData = null;
+                // считываем переданный файл в массив байтов
+                using (var binaryReader = new BinaryReader(pvm.Avatar.OpenReadStream()))
+                {
+                    imageData = binaryReader.ReadBytes((int)pvm.Avatar.Length);
+                }
+                // установка массива байтов
+                person.Avatar = imageData;
+            }
+            _context.People.Add(person);
+            _context.SaveChanges();
+
+            return RedirectToAction("Create");
+        }
+
         public IActionResult Index()
         {
             return View(_context.Files.ToList());
         }
         [HttpPost]
-        public async Task<IActionResult> AddFile(IFormFileCollection uploads)
+        public async Task<IActionResult> AddFile(IFormFile uploadedFile)
         {
-            foreach (var uploadedFile in uploads)
+            if (uploadedFile != null)
             {
                 // путь к папке Files
                 string path = "/Files/" + uploadedFile.FileName;
@@ -37,10 +63,10 @@ namespace FileUploadApp.Controllers
                 }
                 FileModel file = new FileModel { Name = uploadedFile.FileName, Path = path };
                 _context.Files.Add(file);
+                _context.SaveChanges();
             }
-            _context.SaveChanges();
 
-            return RedirectToAction("AddFile");
+            return RedirectToAction("Index");
         }
     }
 }
