@@ -12077,11 +12077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexe\\source\\repos\\Exam1\\Exam1\\Exam1.csproj",
+      "projectUniqueName": "C:\\Users\\Alexe\\Desktop\\reposetory\\Kononov_Alexey_11-709\\repos\\FALL 2019\\Exam\\Exam1\\Exam1\\Exam1.csproj",
       "projectName": "Exam1",
-      "projectPath": "C:\\Users\\Alexe\\source\\repos\\Exam1\\Exam1\\Exam1.csproj",
+      "projectPath": "C:\\Users\\Alexe\\Desktop\\reposetory\\Kononov_Alexey_11-709\\repos\\FALL 2019\\Exam\\Exam1\\Exam1\\Exam1.csproj",
       "packagesPath": "C:\\Users\\Alexe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexe\\source\\repos\\Exam1\\Exam1\\obj\\",
+      "outputPath": "C:\\Users\\Alexe\\Desktop\\reposetory\\Kononov_Alexey_11-709\\repos\\FALL 2019\\Exam\\Exam1\\Exam1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,29 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Exam1.Models;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
-namespace Exam1.Controllers
+namespace FileUploadApp.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationContext _context;
+        IHostingEnvironment _appEnvironment;
+
+        public HomeController(ApplicationContext context, IHostingEnvironment appEnvironment)
+        {
+            _context = context;
+            _appEnvironment = appEnvironment;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return View(_context.Files.ToList());
         }
-
-        public IActionResult Privacy()
+        [HttpPost]
+        public async Task<IActionResult> AddFile(IFormFile uploadedFile)
         {
-            return View();
-        }
+            if (uploadedFile != null)
+            {
+                // путь к папке Files
+                string path = "/Files/" + uploadedFile.FileName;
+                // сохраняем файл в папку Files в каталоге wwwroot
+                using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+                {
+                    await uploadedFile.CopyToAsync(fileStream);
+                }
+                FileModel file = new FileModel { Name = uploadedFile.FileName, Path = path };
+                _context.Files.Add(file);
+                _context.SaveChanges();
+            }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return RedirectToAction("Index");
         }
     }
 }
