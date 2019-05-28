@@ -36,17 +36,18 @@ namespace NewBot
         static void Main()
         {
             botClient = new TelegramBotClient(
-                "775986874:AAEgYiDvdavMI9EKr5AQqDWcZbbKUac2CeU",
-            new SocksWebProxy(
-                    new ProxyConfig(
-                        IPAddress.Parse("127.0.0.1"),
-                        GetNextFreePort(),
-                        IPAddress.Parse("185.20.184.217"),
-                        3693,
-                        ProxyConfig.SocksVersion.Five,
-                        "userid66n9",
-                        "pSnEA7M"),
-                    false));
+                "775986874:AAEgYiDvdavMI9EKr5AQqDWcZbbKUac2CeU");
+                //,
+            //new SocksWebProxy(
+            //        new ProxyConfig(
+            //            IPAddress.Parse("127.0.0.1"),
+            //            GetNextFreePort(),
+            //            IPAddress.Parse("185.20.184.217"),
+            //            3693,
+            //            ProxyConfig.SocksVersion.Five,
+            //            "userid66n9",
+            //            "pSnEA7M"),
+            //        false));
 
             var me = botClient.GetMeAsync().Result;
             Console.WriteLine(
@@ -400,6 +401,7 @@ namespace NewBot
             {
                 user.answer[counter] = e.Message.Text;
                 counter++;
+                //UserService.Save(user);
                 user.step++;
                 //UserService.Save(user);
                 var rkm = new ReplyKeyboardMarkup
@@ -1326,6 +1328,7 @@ namespace NewBot
                     "Ну что ж...Боюсь, я увлеклась и совсем тебя утомила.Вот и сказке конец, а кто слушал, а особенно участвовал в ее создании, " +
                     "тот и молодец.Спасибо тебе и до следующей встречи, мой друг!",
                     replyMarkup: rkm);
+                user.step = 0;
                 return;
             }
 

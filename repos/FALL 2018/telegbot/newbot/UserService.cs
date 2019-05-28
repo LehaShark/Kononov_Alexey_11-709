@@ -11,7 +11,7 @@ namespace NewBot
     public class UserService<T> : IDataService<T> where T : User, new()
     {
         
-        const string connString = "Host=localhost;Port=5432;Username=postgres;Password=Z1478963z;Database=TelegramBot";
+        const string connString = "Host=localhost;Port=5432;Username=postgres;Password=Z1478963z;Database=sem";
         private string ConnectionString { get; set; }
 
         public void Save(T user)
@@ -23,9 +23,12 @@ namespace NewBot
                 using (var cmd = new NpgsqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "INSERT INTO users(step, answer) VALUES (@user, @step)";
+                    cmd.CommandText = "INSERT INTO users(step, answer) VALUES (@step, @answer)";
                     cmd.Parameters.AddWithValue("@step", user.step);
-                    cmd.Parameters.AddWithValue("@answer", user.answer);
+                    foreach (string e in user.answer)
+                    {
+                        cmd.Parameters.AddWithValue("@answer", e);
+                    }
                     cmd.ExecuteNonQuery();
                 }
             }
