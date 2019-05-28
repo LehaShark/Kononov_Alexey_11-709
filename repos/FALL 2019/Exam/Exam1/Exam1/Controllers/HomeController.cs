@@ -50,43 +50,6 @@ namespace FileUploadApp.Controllers
             return View(_context.Files.ToList());
         }
 
-
-
-
-
-
-
-
-
-
-
-        //[HttpPost]
-        //public async Task<IActionResult> ShareFile(string shortdescription, string description, IFormFile file)
-        //{
-        //    var a = file.FileName.Split('.');
-        //    var parh = _appEnvironment.WebRootPath + "/";// + key +
-        //    string path = "." + a[a.Length - 1];
-        //    var key = repository.SaveSimpleFile(shortdescription, description, file.FileName, parh, path);
-
-        //    if (file != null)
-        //    {
-        //        using (var filestream = new FileStream(key.FilePath, FileMode.Create))
-        //        {
-        //            await file.CopyToAsync(filestream);
-        //        }
-        //    }
-        //    return RedirectToAction("ShowUrl", "File", new { url = key.FileShortKey });
-        //}
-
-
-
-
-
-
-
-
-
-
         [HttpPost]
         public async Task<IActionResult> AddFile(IFormFile uploadedFile)
         {
