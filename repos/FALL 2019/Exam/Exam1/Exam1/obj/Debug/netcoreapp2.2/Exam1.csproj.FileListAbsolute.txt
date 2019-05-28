@@ -30,3 +30,4 @@ C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exa
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam1\Exam1\obj\Debug\netcoreapp2.2\Exam1.csproj.CopyComplete
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam1\Exam1\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam1\Exam1\obj\Debug\netcoreapp2.2\Razor\Views\Files\index.g.cshtml.cs
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam1\Exam1\obj\Debug\netcoreapp2.2\Razor\Views\Files\Info.g.cshtml.cs

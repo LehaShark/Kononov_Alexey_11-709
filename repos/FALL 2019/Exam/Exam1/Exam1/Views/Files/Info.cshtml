@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Exam1.Models.FileModel>
+@{
+    ViewData["Title"] = "Информация о файле";
+}
+<h3>Информация о файле</h3>
+<table class="table-condensed">
+    <tr>
+        <td>File</td>
+        <td>Name</td>
+        <td> </td>
+        <td>Path</td>
+        <td></td>
+    </tr>
+    @foreach (var file in Model)
+    {
+    <tr>
+        <p><img src="@Url.Content(file.Path)"></p>
+        <td>@file.Name</td>
+        <td> </td>
+        <td>@file.Path</td>
+        <td><a href="~/Files/Info/@file.Id">Информация</a></td>
+    </tr>
+    }
+</table>

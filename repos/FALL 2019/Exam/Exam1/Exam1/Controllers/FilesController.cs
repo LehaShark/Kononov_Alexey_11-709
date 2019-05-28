@@ -10,7 +10,6 @@ namespace Exam1.Controllers
     public class FilesController : Controller
     {
         ApplicationContext db;
-        // GET: /<controller>/ 
         public FilesController(ApplicationContext context)
         {
             db = context;
@@ -18,6 +17,12 @@ namespace Exam1.Controllers
         public IActionResult Index()
         {
             return View(db.Files.ToList());
+        }
+        [HttpGet]
+        public IActionResult Info(int id)
+        {
+            ViewBag.FileId = id;
+            return View();
         }
     }
 }
