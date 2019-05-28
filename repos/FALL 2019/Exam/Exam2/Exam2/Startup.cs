@@ -10,9 +10,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Exam2.Data;
+using Exam2.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Exam2
 {
@@ -36,6 +37,11 @@ namespace Exam2
             });
 
             services.AddDbContext<ApplicationDbContext>(context => { context.UseInMemoryDatabase("ConferencePlanner"); });
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+               .AddCookie(options => //CookieAuthenticationOptions
+               {
+                   options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Identity/Account/Login");
+               });
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();

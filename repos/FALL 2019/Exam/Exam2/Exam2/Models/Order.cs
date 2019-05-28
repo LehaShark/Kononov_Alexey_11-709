@@ -8,11 +8,12 @@ namespace Exam2.Models
 {
     public class Order
     {
-        [Key]
-        public string Id { get; set; }
-        public string UserId { get; set; }
-        public List<string> DishesId { get; set; }
-        public int Cost { get; set; }
-        public DateTime Time { get; set; }
+        public int OrderId { get; set; }
+        public string User { get; set; } // имя фамилия покупателя
+        public string Address { get; set; } // адрес покупателя
+        public string ContactPhone { get; set; } // контактный телефон покупателя
+
+        public int DishId { get; set; } // ссылка на связанную модель Phone
+        public Dish Dish { get; set; }
     }
 }

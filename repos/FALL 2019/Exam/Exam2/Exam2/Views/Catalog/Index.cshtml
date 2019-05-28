@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Exam2.Models.Dish>
+@{
+    ViewData["Title"] = "Каталог товаров";
+}
+<h3>Меню</h3>
+<table class="table-condensed">
+    <tr>
+        <td>Название</td>
+        <td>Описание</td>
+        <td>Цена</td>
+        <td></td>
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.Name</td>
+            <td>@d.ShortDcr</td>
+            <td>@d.Price</td>
+            <td><a href="~/Catalog/Buy/@d.Id">Купить</a></td>
+        </tr>
+    }
+</table>

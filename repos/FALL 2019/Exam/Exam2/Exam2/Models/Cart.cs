@@ -15,8 +15,8 @@ namespace Exam2.Models
         public int Cost { get; set; }
         public void AddDish(Dish dish)
         {
-            DishesId.Add(dish.Id);
-            Cost += dish.Cost;
+            DishesId.Add(dish.Id.ToString());
+            Cost += dish.Price;
         }
     }
 }

@@ -30,6 +30,72 @@ C:\Users\Alexe\Desktop\11-707-exam-Latfullin--master\Exam2\obj\Debug\netcoreapp2
 C:\Users\Alexe\Desktop\11-707-exam-Latfullin--master\Exam2\obj\Debug\netcoreapp2.2\Exam2.dll
 C:\Users\Alexe\Desktop\11-707-exam-Latfullin--master\Exam2\obj\Debug\netcoreapp2.2\Exam2.pdb
 C:\Users\Alexe\Desktop\11-707-exam-Latfullin--master\Exam2\obj\Debug\netcoreapp2.2\Exam2.csproj.CopyComplete
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.deps.json
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.runtimeconfig.json
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.runtimeconfig.dev.json
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.dll
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.pdb
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.Views.dll
+C:\Users\Azazel\source\repos\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.Views.pdb
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csprojAssemblyReference.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csproj.CoreCompileInputs.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorAssemblyInfo.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorAssemblyInfo.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.AssemblyInfoInputs.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.AssemblyInfo.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.TagHelpers.input.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.TagHelpers.output.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorCoreGenerate.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorTargetAssemblyInfo.cache
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorTargetAssemblyInfo.cs
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.Views.pdb
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.dll
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.pdb
+C:\Users\Azazel\source\repos\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csproj.CopyComplete
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csprojAssemblyReference.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csproj.CoreCompileInputs.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorAssemblyInfo.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorAssemblyInfo.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.AssemblyInfoInputs.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.AssemblyInfo.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.dll
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.pdb
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.deps.json
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.runtimeconfig.json
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.runtimeconfig.dev.json
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.dll
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.pdb
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.Views.dll
+C:\NNA\11-707-Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.Views.pdb
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.TagHelpers.input.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.TagHelpers.output.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorCoreGenerate.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Buy.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Index.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorTargetAssemblyInfo.cache
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorTargetAssemblyInfo.cs
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.Views.pdb
+C:\NNA\11-707-Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csproj.CopyComplete
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.deps.json
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.runtimeconfig.json
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\bin\Debug\netcoreapp2.2\Exam2.runtimeconfig.dev.json
@@ -47,6 +113,8 @@ C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exa
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.TagHelpers.output.cache
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.RazorCoreGenerate.cache
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Buy.g.cshtml.cs
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Index.g.cshtml.cs
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
@@ -62,3 +130,6 @@ C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exa
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.dll
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.pdb
 C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Exam2.csproj.CopyComplete
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\ThanksForBuy.g.cshtml.cs
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Restaurant\Create.g.cshtml.cs
+C:\Users\Alexe\Desktop\reposetory\Kononov_Alexey_11-709\repos\FALL 2019\Exam\Exam2\Exam2\obj\Debug\netcoreapp2.2\Razor\Views\Restaurant\Index.g.cshtml.cs
