@@ -22,7 +22,7 @@ namespace Exam1.Controllers
         public IActionResult Info(int id)
         {
             ViewBag.FileId = id;
-            return View();
+            return View(db.Files.ToList());
         }
     }
 }
