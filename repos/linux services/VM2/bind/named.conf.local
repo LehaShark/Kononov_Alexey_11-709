@@ -1,0 +1,19 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "atioungy.lab" {
+	type slave;
+        file "db.srv16.atioungy.lab";
+        masters { 192.168.16.2; };
+};
+
+zone "16.168.192.in-addr.arpa" {
+	type slave;
+        file "db.192.168.16";
+        masters { 192.168.16.2; };
+};  
