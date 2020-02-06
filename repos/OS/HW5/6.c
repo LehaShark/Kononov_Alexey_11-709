@@ -1,79 +1,56 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <dirent.h>
-#include <string.h>
 
+void Jopa (DIR *dir){
+	struct dirent * de;	
+	while(de = readdir(dir))
+		printf("%s \n", de->d_name);
 
-void CompareTo(char *first, char *second)
-{
-    printf("Compare");
-    FILE *fileF;
-    fileF = fopen(first, "r");
-    FILE *fileS;
-    fileS = fopen(second, "r");
-    char chf;
-    char chs;
-    while((chf=fgetc(fileF)) !=EOF || (chs=fgetc(fileS)) !=EOF)
-    {
-        if (chf != chs)
-        {
-            fclose(fileF);
-            fclose(fileS);
-            return;
-        }
-    }
-    //printf("%s     %s \n", first, second);
-    fclose(fileF);
-    fclose(fileS);
 }
 
-void ExplorerS (char *first, char *second)
-{
-    //printf("lol");
-    DIR * dir;
-    struct dirent * de;
-    if ( ( dir = opendir(second) ) == NULL )
-    {
-        //printf("Нет доступа. \n");
-        return;
-    }
-    while ( de = readdir(dir) )
-    {
-        char third[100];
-        snprintf(third, sizeof third, "%s%s%s", second, "/",de->d_name);
-        if( de->d_name!=".." ||de->d_name!=".") continue;
-        else if ( ( opendir(third ) != NULL ) )
-            ExplorerS(first, third);
-        else CompareTo(first, third);
-    }
-    closedir(dir);
+void JopaIF (DIR *dir, char *argv[]){
+	int n = 0;
+	if((dir=opendir("."))==NULL && n == 0)
+	{
+		printf("Нет доступа. \n");
+		return 1;
+		n++;
+	}
+	
+	if((dir=opendir(argv[1]))==NULL && n == 1)
+	{
+		printf("Нет доступа. \n");
+		return 1;
+	}
 }
 
-void ExplorerF (char *first, char *second)
+int main( int argc[] , char *argv[])
 {
 	DIR * dir;
-    struct dirent * de;
-	if ( ( dir = opendir(first) ) == NULL )
-    {
-		//printf("Нет доступа. \n %s", first);
-		return;
+	JopaIF(dir, argv[1]);
+	/*
+	if((dir=opendir("."))==NULL)
+	{
+		printf("Нет доступа. \n");
+		return 1;
 	}
-	while ( de = readdir(dir) )
-    {
-	    printf("%s \n", de->d_name);
-        if( de->d_name==".." || de->d_name==".") continue;
-        char *third[100];
-        snprintf(third, sizeof third, "%s%s%s", first, "/", de->d_name);
-        //printf("%s \n", third);
-        if ( opendir(third) == NULL )
-            ExplorerS(third, second);
-		else ExplorerF(third, second);
+	*/
+	printf("Current: \n");
+	Jopa(dir);
+	
+	JopaIF(dir);
+	/*
+	if((dir=opendir(argv[1]))==NULL)
+	{
+		printf("Нет доступа. \n");
+		return 1;
 	}
-    closedir(dir);
-}
+	*/
+	printf("Choosen: \n");
+	Jopa(dir);
 
-int main()
-{
-    ExplorerF(argv[1], argv[2]);
-    return 0;
+
+	closedir(dir);
+	return 0;
 }

@@ -11,7 +11,6 @@ void reader(char ch, int num, FILE *file)
 		if(ch == '\n') i++;
 		printf("%c", ch);		
 	}
-	
 }
 
 int main( int argc[] , char *argv[])
@@ -25,7 +24,7 @@ int main( int argc[] , char *argv[])
 	}
 	char ch;
 	int num = atoi(argv[2]);	
-	if(num==0)	
+	if (num == 0)	
 	{	
 		while ((ch = fgetc(file)) != EOF) 
 			 printf("%c", ch);	

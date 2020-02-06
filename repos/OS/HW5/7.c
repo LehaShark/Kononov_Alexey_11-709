@@ -1,206 +1,69 @@
-/*2. Найти в заданном каталоге (аргумент 1 командной строки) и всех его
-подкаталогах заданный файл (аргумент 2 командной строки). Вывести на консоль
-полный путь к файлу, размер, дату создания, права доступа, номер индексного
-дескриптора. Вывести также общее количество просмотренных каталогов и файлов.*/
-
-#include <stdio.h>
-#include <dirent.h>
+#include "stdio.h"
+#include "stdlib.h"
+#include "dirent.h"
 #include <string.h>
-#include <sys/types.h>
 #include <sys/stat.h>
-#include <time.h>
-#include <stdlib.h>
-#include <errno.h>
 #include <limits.h>
-#include <locale.h>
-#define STR_SIZE 512
+#include <time.h>
+#include <libgen.h>
 
-char *execfile;
-int count_dir = 0;
-int count_files = 0;
-FILE *file;
+char* fname = NULL;
+void GetDir(char* dir);
+void PrintInfo(char* path);
+char* filename, * progname;
+int num_file = 0, num_dir = 1;
 
-
-void getprop(struct stat buf, char *filepath)
-{
-	char *string;
-	struct 	tm lt;
-	string=(char *)malloc(sizeof(char)*STR_SIZE);
-	localtime_r(&buf.st_mtime,&lt);
-	strftime(string, sizeof(char*)*STR_SIZE, "%d %b %Y", &lt);
-					
-	fprintf(file,"%s %ld %lo %ld %s\n", 
-		filepath, buf.st_size, (unsigned long)buf.st_mode,
-		(long)buf.st_ino, string);
-	free(string);	
+int main(int argc, char* argv[]) {//1 параметр - путь к папке которую ищем 2 название файла
+    filename = argv[2];
+    fname = argv[2];// название файла
+    progname = basename(argv[0]);//название программы
+    GetDir(argv[1]);//с названием пути в папке
+    printf("Directories checked: %d\n", num_dir);
+    printf("Files checked: %d\n", num_file);
+    return 0;
+}
+void GetDir(char* dir) {
+    struct dirent* d;// dirent, которые содержат данные о файлах в директории
+    DIR* dp;// Команда DIR позволяет отобразить список файлов и подкаталогов для указанного каталога. Список может быть отсортирован по множеству критериев, задаваемых параметрами командной строки.
+    if ((dp = opendir(dir)) == NULL)//открываем директорию
+    {
+        fprintf(stderr, "%s: Couldn't open %s.\n", progname, dir);//пишем, что не можем 
+        return;
+    }
+    while ((d = readdir(dp)) != NULL) {//читаем с этой директории
+        char path[1024];
+        char buf[200];
+        if (d->d_type == DT_DIR) {//d_type тип объекта dt_dir - обозначим что каталог. Если каталог то
+            if (strcmp(d->d_name, ".") == 0 || strcmp(d->d_name, "..") == 0)// возвращает 0 если сравнение верное . .. - когда нет файлов
+                continue;
+            if (strcmp(dir, "/") == 0) { // если путь = /
+                snprintf(path, sizeof(path), "/%s", d->d_name);// Запись форматированной строки в строку с ограничением по размеру строки. Добавляет путь директории 
+                //когда в дире нет файла пропускаем, а когда есть внутри дирктория, то мы дописываем название директории и вызываем рекурсивно.
+            }
+            else {
+                snprintf(path, sizeof(path), "%s/%s", dir, d->d_name);// пишем путь к файлу. 
+            }
+            num_dir++;
+            GetDir(path);// вызываем рекурсивно
+        }
+        else {
+            num_file++;
+            if (strcmp(d->d_name, filename) == 0) {// сравниваем название с нашим файлом. 
+                snprintf(path, sizeof(path), "%s/%s", dir, d->d_name);//Если одинаковые то сохраняем путь и передаем в принт инфо
+                PrintInfo(path);
+            }
+        }
+    }
+    closedir(dp);
 }
 
-int findindir(char *folder, char *filename, int *file_exist)
-{
-	DIR *dfd;
-	struct dirent *dir;
-	struct stat buf;
-	char *fullpath, *filepath;
-	int ret, temperrno;
-	setlocale(LC_TIME,"ru_RU.UTF-8");
-
-	fullpath=(char *)malloc(sizeof(char)*STR_SIZE);
-	filepath=(char *)malloc(sizeof(char)*STR_SIZE);
-
-	if ((dfd=opendir(folder)) == NULL)
-	{
-		fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno), realpath(folder,fullpath));
-		return errno;
-	}
-
-	while((dir=readdir(dfd)) != NULL)
-	{
-		if (dir->d_type != DT_DIR)
-		{
-			if (dir->d_type == DT_REG)
-				count_files++;
-
-			if (strcmp(filename,dir->d_name) == 0)
-			{
-				
-				if (realpath(folder, filepath) != NULL)
-            	{
-	            	strcat(filepath,"/");
-	            	strcat(filepath,filename);
-	            }
-	            else
-	            {
-	            	fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno), realpath(folder,fullpath));
-					return errno;
-	            }
-				
-				if ((ret = stat(filepath, &buf)) == 0 )
-				{
-					if (*file_exist == 1)
-					{						
-						if ((file = fopen("result.txt", "a")) != NULL)
-						{
-							getprop(buf, filepath);
-							fclose(file);
-						}
-						else
-						{
-							fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno), filepath);
-							return errno;
-						}
-					}
-					else
-					{
-						if ((file = fopen("result.txt", "w")) != NULL)
-						{
-							getprop(buf, filepath);
-							fclose(file);
-							*file_exist = 1;
-						}
-						else
-						{
-							fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno), filepath);
-							return errno;
-						}
-					}
-				}
-				else
-				{
-					fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno), filepath);
-					continue;
-				}		
-			}
-		}
-		else 
-		{
-			if (((dir->d_type == DT_DIR)) 
-				&& ((strcmp(dir->d_name,".")) != 0) 
-				&& ((strcmp(dir->d_name,"..")) != 0))
-			{
-				count_dir++;
-				if (realpath(folder, filepath) != NULL)
-				{
-					strcat(filepath,"/");
-					strcat(filepath,dir->d_name);
-				}
-				else
-	            {
-	            	fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno), realpath(folder,fullpath));
-					return errno;
-	            }
-            	findindir(filepath, filename, file_exist);
-			}
-		}
-		temperrno = errno;
-	}
-	if (errno != temperrno)
-	{
-		fprintf(stderr, "%s : %s : %s!\n", execfile, strerror(errno), realpath(folder,fullpath));
-		return errno;
-	}
-	
-	if (closedir(dfd) == -1)
-	{
-		fprintf(stderr, "%s : %s : %s!\n", execfile, strerror(errno), realpath(folder,fullpath));
-		return errno;
-	}
-
-	free(fullpath);
-	free(filepath);
-}
-
-char *getexecfilename(char *arg)
-{
-	int len = strlen(arg);
-	int i = len-1;
-
-	while(arg[i] != '/')
-		i--;
-	
-	int lentemp = len - i;
-	char *tempstr = malloc(sizeof(char)*(lentemp));
-	int j,k = 0;
-	
-	i++;
-	
-	for(j = i; j < len; j++)
-		tempstr[k++]=arg[j];
-	tempstr[k]=0;
-
-	return tempstr;
-} 
-
-int main(int argc, char *argv[])
-{
-	char *dirname, *filename;
-	int c, flag = 0;
-	
-	execfile = getexecfilename(argv[0]);
-	
-	filename=argv[2];		
-	dirname=argv[1];
-	findindir(dirname,filename, &flag);
-		
-	if (flag == 1)
-	{
-		if ((file = fopen("result.txt", "r")) != NULL)
-		{
-			while(1)
-			{
-				c = fgetc(file);
-				if ( feof(file) )
-					break;
-				printf("%c", c);
-			}
-			fclose(file);
-		}
-		else
-			fprintf(stderr, "%s : %s : %s\n", execfile, strerror(errno),
-				"/home/oleguchok/osisp/laboratory/second/result.txt");//!
-	}
-	else 
-		fprintf(stderr, "%s : File doesn't exist\n", execfile);
-	
-	printf("%d %d\n", count_dir, count_files);
-	return 0;
+void PrintInfo(char* path) {
+    FILE* fp;
+    struct stat buff;
+    stat(path, &buff);
+    printf("File path  %s \n", path);
+    printf("File name  %s \n", fname);
+    printf("Size %ld \n", buff.st_size);
+    printf("Create date %s", asctime(gmtime(&buff.st_ctime)));
+    printf("Prava dostupa %3o\n", buff.st_mode);
 }
