@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/carTracking.dir/main.cpp.o  -o carTracking 
